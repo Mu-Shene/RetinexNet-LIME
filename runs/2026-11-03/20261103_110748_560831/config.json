@@ -1,0 +1,116 @@
+{
+  "arguments": {
+    "batch_size": 16,
+    "data_root": "data",
+    "decom": 0,
+    "epoch": 100,
+    "eval_every_epoch": 20,
+    "gpu_idx": "0",
+    "gpu_mem": 0.5,
+    "output_root": "runs",
+    "patch_size": 48,
+    "phase": "train",
+    "reference_dir": null,
+    "run_dir": null,
+    "save_dir": null,
+    "start_lr": 0.001,
+    "test_dir": null,
+    "use_gpu": 0
+  },
+  "checkpoints": {
+    "Decom": "checkpoints/best/Decom/RetinexNet-Decom-2940",
+    "Relight": "checkpoints/best/Relight/RetinexNet-Relight-2730"
+  },
+  "completed_at": "2026-11-03T11:39:13+08:00",
+  "data": {
+    "test_images": 15,
+    "training_pairs": 485
+  },
+  "distribution": {
+    "dataset": {
+      "bytes": 348058979,
+      "evaluation_pairs": 15,
+      "png_files": 1000,
+      "root": "data",
+      "training_pairs": 485
+    },
+    "included": [
+      "best checkpoints",
+      "training CSV files",
+      "training console log",
+      "final test results",
+      "paired training dataset: 485 pairs",
+      "paired evaluation dataset: 15 pairs"
+    ],
+    "notes": "Distribution copy only: paths normalized; original numerical records and model tensors unchanged. Last checkpoints and samples omitted; source archive preserved.",
+    "omitted": [
+      "last checkpoints",
+      "training samples"
+    ],
+    "path_bases": {
+      "arguments and other recorded paths": "project root; run plot_loss.py from project root",
+      "paths.checkpoint_dir and checkpoints": "run directory"
+    },
+    "prepared_on": "2026-11-03",
+    "source_run_id": "20261103_110748_560831"
+  },
+  "last_checkpoints": {},
+  "paths": {
+    "checkpoint_dir": "checkpoints/best",
+    "epoch_csv": "runs/2026-11-03/20261103_110748_560831/epochs.csv",
+    "loss_csv": "runs/2026-11-03/20261103_110748_560831/loss.csv",
+    "reference_dir": "data/eval/high",
+    "run_dir": "runs/2026-11-03/20261103_110748_560831",
+    "test_dir": "data/eval/low",
+    "test_results": "runs/2026-11-03/20261103_110748_560831/test_results",
+    "train_log": "runs/2026-11-03/20261103_110748_560831/train.log"
+  },
+  "run_id": "20261103_110748_560831",
+  "schema_version": 2,
+  "selection": {
+    "Decom": {
+      "epoch": 98,
+      "metric": "training_loss",
+      "mode": "min",
+      "value": 0.021884802356362344
+    },
+    "Relight": {
+      "epoch": 91,
+      "metric": "training_loss",
+      "mode": "min",
+      "value": 0.14922655001282692
+    }
+  },
+  "started_at": "2026-11-03T11:07:48+08:00",
+  "status": "completed",
+  "test": {
+    "completed_at": "2026-11-03T11:39:13+08:00",
+    "input_count": 15,
+    "metrics": {
+      "aggregation": "arithmetic mean of per-image metrics; pixel-weighted metrics weight RGB-value counts",
+      "basis": "saved_enhanced_images",
+      "csv_path": "runs/2026-11-03/20261103_110748_560831/test_results/metrics.csv",
+      "evaluated_count": 15,
+      "evaluated_pixel_values": 10800000,
+      "failed_count": 0,
+      "input_count": 15,
+      "mean_mae": 0.1228647450980392,
+      "mean_mse": 0.023891735625898865,
+      "normalization": "RGB channel values divided by 255",
+      "normalization_range": [
+        0.0,
+        1.0
+      ],
+      "pixel_weighted_mae": 0.12286474509803921,
+      "pixel_weighted_mse": 0.023891735625898868,
+      "reference_dir": "data/eval/high",
+      "reference_matching": "exact input filename",
+      "status": "complete",
+      "summary_path": "runs/2026-11-03/20261103_110748_560831/test_results/metrics_summary.json"
+    },
+    "output_count": 15,
+    "output_dir": "runs/2026-11-03/20261103_110748_560831/test_results"
+  },
+  "training_complete": true,
+  "training_completed_at": "2026-11-03T11:39:05+08:00"
+}

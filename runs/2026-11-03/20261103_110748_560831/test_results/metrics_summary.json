@@ -1,0 +1,23 @@
+{
+  "aggregation": "arithmetic mean of per-image metrics; pixel-weighted metrics weight RGB-value counts",
+  "basis": "saved_enhanced_images",
+  "csv_path": "runs/2026-11-03/20261103_110748_560831/test_results/metrics.csv",
+  "evaluated_count": 15,
+  "evaluated_pixel_values": 10800000,
+  "failed_count": 0,
+  "input_count": 15,
+  "mean_mae": 0.1228647450980392,
+  "mean_mse": 0.023891735625898865,
+  "normalization": "RGB channel values divided by 255",
+  "normalization_range": [
+    0.0,
+    1.0
+  ],
+  "pixel_weighted_mae": 0.12286474509803921,
+  "pixel_weighted_mse": 0.023891735625898868,
+  "recorded_path_base": "project root",
+  "reference_dir": "data/eval/high",
+  "reference_matching": "exact input filename",
+  "status": "complete",
+  "summary_path": "runs/2026-11-03/20261103_110748_560831/test_results/metrics_summary.json"
+}
