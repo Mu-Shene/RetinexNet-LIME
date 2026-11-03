@@ -1,0 +1,13 @@
+# Python 3.7.16; versions read from the local retinex-tf1 environment.
+# Direct dependencies and TensorFlow compatibility constraints, not a full lockfile.
+# Fresh installation has not been verified during repository preparation.
+tensorflow==1.15.5
+numpy==1.18.5
+Pillow==9.5.0
+protobuf==3.20.3
+matplotlib==3.5.3
+h5py==2.10.0
+tensorflow-estimator==1.15.1
+tensorboard==1.15.0
+Werkzeug==2.2.3
+Markdown==3.4.4

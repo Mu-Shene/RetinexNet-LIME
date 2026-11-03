@@ -1,0 +1,49 @@
+# Python / local editor / operating-system files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+__MACOSX/
+Thumbs.db
+.venv/
+venv/
+/.verification/
+
+# Packaged LOL training and evaluation PNGs under data/ are included.
+# Keep unused dataset copies outside this publication copy.
+/data1/
+/LOLdataset/
+/LOLdataset.zip
+
+# Legacy weights, visualizations, and root-level training log
+/checkpoint/
+/model/
+/sample/
+/train.log
+
+# Keep only the selected run and its latest pointer.
+# Do not replace this whitelist with /runs/: Git must visit parent dirs.
+/runs/*
+!/runs/latest.json
+!/runs/2026-11-03/
+/runs/2026-11-03/*
+!/runs/2026-11-03/20261103_110748_560831/
+/runs/2026-11-03/20261103_110748_560831/*
+!/runs/2026-11-03/20261103_110748_560831/config.json
+!/runs/2026-11-03/20261103_110748_560831/loss.csv
+!/runs/2026-11-03/20261103_110748_560831/epochs.csv
+!/runs/2026-11-03/20261103_110748_560831/train.log
+!/runs/2026-11-03/20261103_110748_560831/loss_curve.png
+!/runs/2026-11-03/20261103_110748_560831/checkpoints/
+!/runs/2026-11-03/20261103_110748_560831/test_results/
+/runs/2026-11-03/20261103_110748_560831/checkpoints/*
+!/runs/2026-11-03/20261103_110748_560831/checkpoints/best/
+
+# Newly generated test sessions and intermediate training artifacts
+**/tests/
+**/checkpoints/last/
+**/samples/
