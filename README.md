@@ -110,6 +110,8 @@ MATLAB 入口为 `LIME/demo_LIME.m`，核心算法为 `LIME/lime_enhance.m`。�
 
 ## 来源与引用
 
+data文件来源： https://pan.baidu.com/s/1DaIjwzIOtel1990njctn2w?pwd=ia2w 提取码: ia2w 
+
 下图由原 RetinexNet 项目提供，用于介绍方法，**不是本次训练结果**：
 
 <img src="figs/results.png" width="800" alt="原 RetinexNet 项目展示图">
